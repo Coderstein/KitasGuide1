@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kitas_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="de.freshmaninandroid.app_programmierung.kitaguide.KitasDetails">
+
+
+
+    <TextView
+        android:id="@+id/name_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/place_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_view"/>
+
+    <TextView
+        android:id="@+id/street_view"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/place_view"/>
+
+    <TextView
+        android:id="@+id/contact_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/street_view"/>
+
+    <TextView
+        android:id="@+id/tel_view"
+        android:paddingBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_view"/>
+
+    <TextView
+        android:id="@+id/provider_view"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tel_view"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="selectKita"
+        android:layout_below="@id/provider_view"
+        android:text="@string/website"/>
+
+</RelativeLayout>
